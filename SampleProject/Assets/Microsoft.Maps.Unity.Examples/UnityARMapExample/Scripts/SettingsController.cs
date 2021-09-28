@@ -28,7 +28,23 @@ public class SettingsController : MonoBehaviour
 
     public void AnimateToPlace(string location)
     {
-        if (location == "Space Needle")
+        if (location == "Berlin City Center Tower")
+        {
+            map.SetMapScene(new MapSceneOfLocationAndZoomLevel(new LatLon(52.52112194306517, 13.409395862843912), 16.5f));
+        }
+        else if (location == "Brandenburg Gate")
+        {
+            map.SetMapScene(new MapSceneOfLocationAndZoomLevel(new LatLon(52.51639631117365, 13.377710633040955), 17.0f));
+        }
+        else if (location == "British Embassy Berlin")
+        {
+            map.SetMapScene(new MapSceneOfLocationAndZoomLevel(new LatLon(52.51565325952461, 13.381043456588655), 18.0f));
+        }
+        else if (location == "Wilhelm")
+        {
+            map.SetMapScene(new MapSceneOfLocationAndZoomLevel(new LatLon(52.51467712304321, 13.382066944437257), 18.0f));
+        }
+        else if (location == "Space Needle")
         {
             map.SetMapScene(new MapSceneOfLocationAndZoomLevel(new LatLon(47.62051, -122.349303), 17.5f));
         }
